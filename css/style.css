@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #7FFFD4;
+}
+
+.container{
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+#button{
+    padding: 0 20px;
+    height: 19px;
+    margin-top: 26px;
+}
+
+header{
+height: 70px;
+padding: 0 20px;
+line-height: 70px;
+background-color: white;
+display: flex; 
+justify-content: space-between;
+}
+
+#grid{
+    width: 500px;
+    height: 500px;
+    margin: 60px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#grid .cell{
+    height: calc(100% / 10);
+    width: calc(100% / 10);
+    border: 2px solid black;
+    cursor: pointer;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+#grid .cell.clicked {
+    background-color: dodgerblue;
+}
